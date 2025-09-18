@@ -1,3 +1,4 @@
+﻿using FleetManager.Data;
 using fs_a_2025_blazor_0918_71617.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+// ✅ Register the repository for DI (mock data is fine as Singleton)
+builder.Services.AddSingleton<CarRepository>();
 
 var app = builder.Build();
 

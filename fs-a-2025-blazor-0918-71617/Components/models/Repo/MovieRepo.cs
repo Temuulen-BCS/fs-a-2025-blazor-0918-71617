@@ -17,4 +17,4 @@ public static class MovieRepo
             new Movie { Id = 10, Title = "Mad Max: Fury Road", Genre = "Action", ReleaseYear = 2015, Director = "George Miller", Rating = 8.1 }
         };
     }
-}
+}   
